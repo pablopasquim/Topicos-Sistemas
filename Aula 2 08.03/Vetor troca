@@ -1,0 +1,40 @@
+
+//Criação de um vetor
+int[] vetor = new int[100];
+Random aleatorio = new Random();
+
+//Preencher valores alatórios no vetor
+for(int i = 0; i < vetor.Length; i++) 
+{
+
+    vetor[i] = aleatorio.Next(101);
+    Console.Write(vetor[i] + " ");
+
+}
+
+Console.WriteLine("\n");
+
+do
+{
+    Boolean troca = true;
+
+
+//Ordenar o vetor com Bubble Sort
+for (int i = 0; i < vetor.Length - 1; i++)
+{
+    int aux = 0;
+
+    if (vetor[i] > vetor[i++])
+    {
+        aux = vetor[i];
+        vetor[i] = vetor[i++];
+        vetor[i++] = aux;
+
+    } 
+    
+    Console.Write(vetor[i] + " ");
+
+}
+    
+    
+} while (troca = true);
