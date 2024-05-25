@@ -1,3 +1,0 @@
-Console.WriteLine("Digite a sua idade: ");
-string idade = Console.ReadLine();
-Console.WriteLine("Idade: " + idade);
